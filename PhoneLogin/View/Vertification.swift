@@ -19,6 +19,30 @@ struct Vertification: View {
         .padding()
         .frame(maxHeight: .infinity, alignment: .top)
         .navigationTitle("認証")
+        .onChange(of: otpModel.otpFields) { newValue in
+            OTPCondition(value: newValue)
+        }
+    }
+    
+    func OTPCondition(value: [String]){
+        for index in 0..<5 {
+            if value[index].count == 1 && activeStateForIndex(index: index) == activeField {
+                activeField = activeStateForIndex(index: index + 1)
+            }
+        }
+        
+        for index in 1...5{
+            if value[index].isEmpty && !value[index - 1].isEmpty {
+                activeField = activeStateForIndex(index: index - 1)
+            }
+        }
+        
+        
+        for index in 0..<6{
+            if value[index].count > 1 {
+                otpModel.otpFields[index] = String(value[index].last!)
+            }
+        }
     }
     
     
