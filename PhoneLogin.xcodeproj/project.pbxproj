@@ -12,6 +12,7 @@
 		82963BE52898075500A8049B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82963BE42898075500A8049B /* Assets.xcassets */; };
 		82963BE82898075500A8049B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82963BE72898075500A8049B /* Preview Assets.xcassets */; };
 		82963BF0289807C800A8049B /* Vertification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82963BEF289807C800A8049B /* Vertification.swift */; };
+		82963BF3289808A900A8049B /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82963BF2289808A900A8049B /* OTPViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		82963BE42898075500A8049B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82963BE72898075500A8049B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		82963BEF289807C800A8049B /* Vertification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertification.swift; sourceTree = "<group>"; };
+		82963BF2289808A900A8049B /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		82963BDF2898075300A8049B /* PhoneLogin */ = {
 			isa = PBXGroup;
 			children = (
+				82963BF12898089200A8049B /* ViewModel */,
 				82963BEE289807B100A8049B /* View */,
 				82963BE02898075400A8049B /* PhoneLoginApp.swift */,
 				82963BE22898075400A8049B /* ContentView.swift */,
@@ -76,6 +79,14 @@
 				82963BEF289807C800A8049B /* Vertification.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		82963BF12898089200A8049B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				82963BF2289808A900A8049B /* OTPViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82963BF3289808A900A8049B /* OTPViewModel.swift in Sources */,
 				82963BE32898075400A8049B /* ContentView.swift in Sources */,
 				82963BF0289807C800A8049B /* Vertification.swift in Sources */,
 				82963BE12898075400A8049B /* PhoneLoginApp.swift in Sources */,
